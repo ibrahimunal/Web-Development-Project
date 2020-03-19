@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="boardApp">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container" ng-controller="boardCtrl">
+       <div class="header">
+           
+            <h1>Choose your color</h1>
+            <button type="button">BLUE</button>
+            <button type="button">YELLOW</button>
+        </div>
+
+        <div class="board" ng-click="clicked()">
+        
+                
+                <div class="row md-4">
+                        <div class="col" ng-class="{'blue': color1}"> ISMAYIL</div>
+                        <div class="col" ng-class="yellow"> YEKTA</div>
+                        <div class="col"> IBRAHIM</div>
+                    </div>
+                    <div class="row md-4">
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        </div>
+                    <div class="row md-4">
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        </div>
+        </div>
+        
+
+            
+       
+
+
+    </div>
+</body>
+</html>

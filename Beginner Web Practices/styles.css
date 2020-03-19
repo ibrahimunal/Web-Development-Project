@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+.main-header{
+    background-image: url("images/background.jpg");
+    background-size: cover;
+}
+
+
+*{
+    font-family: 'Cinzel', serif;}
+#adjust{
+    width: 60px;
+}
+
+#header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: right;
+    padding: 10px;
+    color: azure;
+
+
+}
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.nav ul{
+    margin : 0;
+}
+.nav li{
+    display: inline;
+    
+}
+.nav a{
+    display: inline-block;
+    padding: 5px;
+    color:white;
+}
+.nav a:hover{
+    background-color: burlywood;
+}
+

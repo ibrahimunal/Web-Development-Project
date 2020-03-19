@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+/* Style inputs */
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+body{
+    margin: 20px;
+}
+/* Add a background color to the submit button on mouse-over */
+input[type=submit]:hover {  
+    box-shadow: 5px 10px;
+  background-color: #45a049;
+}
+input[type=text]:hover {
+  background-color: #45a049;
+}
+
+
+</style>
+<body> 
+
+    <div class="container">
+
+    </div>
+
+    </div>
+
+
+        <div class="middle">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="lname">Address</label>
+                    <input type="text" id="lname" name="address" placeholder="Your address">
+                  
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                      <option value="australia">Australia</option>
+                      <option value="canada">Canada</option>
+                      <option value="tr">Turkey</option>
+                      <option value="ger">Germany</option>
+                      <option value="fr">France</option>
+                    </select>
+                  
+                    <input type="submit" value="Submit">
+                  </form>
+        </div>
+
+    </div>
+
+    <input type="date" name="16px" >
+    <label for="why">Why do you consider yourself hilarious?</label>
+<textarea name="why" id="why" required>I am hilarious because...</textarea>
+
+<label for="how">How hilarious are you? (in 100 characters or less)</label>
+<textarea placeholder="As hilrious as a clown? As hilarious as Donald Trump's hair?" maxlength="100" name="how" id="how"></textarea>
+<form action="dogselecta.php">
+        <select name="dog">
+            <option>Arctic Fox</option>
+            <option>Maned Wolf</option>
+            <option>Grey Wolf</option>
+            <option>Red Fox</option>
+            <option>Fennec</option>
+            <option selected>Domestic Dog</option>
+        </select>
+        <input type="submit">
+    </form>
+  
+</body>
+</html>

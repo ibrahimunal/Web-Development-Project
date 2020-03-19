@@ -1,0 +1,62 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/manzara.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.images{
+    text-align: center;
+    background-color: white;
+    width:  50rem;
+    height: 30rem;
+    background-image: url('/images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.9);
+    position: relative;
+
+
+
+}
+
+button[type='button']{
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    font-size:30px;
+    background-color: rgb(61, 131, 223);
+    border: 5px black solid;
+    border-radius: 10%;
+    outline:none;
+    
+}
+#prev{
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translate(-50%,-50%);
+
+}
+#next{
+    position: absolute;
+    top:50%;
+    right:0;
+    transform: translate(50%,-50%);
+
+}
+button[type='button']:active{
+    box-shadow: 5px 5px 10px black;
+
+}
+button[type='button']:hover{
+    background-color: #f1f1f1;
+    
+}

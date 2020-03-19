@@ -1,0 +1,2 @@
+targetType 4 ve diğer typelar olarak control ediliyor.
+targetChoiceIndex eğer targetType 4 ise min 0 max (choice sayısı - 1) olabilir.

@@ -1,0 +1,44 @@
+.nav-bar{
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    background-color: rgb(59, 100, 177);
+    opacity: 0.9;
+
+}
+
+.icon{
+    text-shadow: 1px 1px 0.3px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    border: rgb(5, 5, 5) 2px solid;
+    border-radius: 5px;
+
+} 
+.icon:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    
+}
+.home{
+    color: black;
+}
+
+.contact-us{
+    color: black;
+
+}
+
+.about-us{
+    color: black;
+
+}
+.exit{
+    background-color: rgb(124, 7, 7);
+    color: black;
+
+}

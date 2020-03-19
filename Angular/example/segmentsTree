@@ -1,0 +1,1580 @@
+[
+  {
+    "tree": [
+      {
+        "label": "5. Ho_w o_ld ar_e you: <= 36.00",
+        "children": [],
+        "expanded": true,
+        "branchSamplePercentage": 31.45,
+        "branchSampleSize": 1258,
+        "lift": 1.1785276073619633,
+        "prediction": [
+          0.4237,
+          0.5763
+        ],
+        "path": [
+          1,
+          0
+        ],
+        "choiceIDList": [],
+        "filteredLimits": {
+          "lowerLimit": 18,
+          "lowerLimitIncluded": true,
+          "upperLimit": 36,
+          "upperLimitIncluded": true
+        },
+        "targetChoiceList": [
+          {
+            "isVirtual": false,
+            "isFiltered": false,
+            "name": "No",
+            "choiceIDList": [
+              0
+            ]
+          },
+          {
+            "isVirtual": false,
+            "isFiltered": false,
+            "name": "Yes",
+            "choiceIDList": [
+              1
+            ]
+          }
+        ],
+        "questionNo": 5,
+        "type": 1,
+        "includeMissing": false,
+        "fixedLimits": {
+          "lowerLimit": 18,
+          "lowerLimitIncluded": true,
+          "upperLimit": 68,
+          "upperLimitIncluded": true
+        },
+        "VIScore": 4,
+        "liftDecimal": "18",
+        "questionPart": "5. Ho_w o_ld ar_e you",
+        "questionPartWithoutNo": "Ho_w o_ld ar_e you",
+        "choicePart": "36.00",
+        "comparisonPart": "<=",
+        "comparisonExplanationPart": "≤ ",
+        "classes": [
+          "bold-weight-tree-label",
+          "enhence-tree-two"
+        ]
+      },
+      {
+        "label": "1. How did you get informed about our company: Website, Social Media",
+        "children": [],
+        "expanded": true,
+        "branchSamplePercentage": 37.9,
+        "branchSampleSize": 1516,
+        "lift": 1.1169734151329245,
+        "prediction": [
+          0.4538,
+          0.5462
+        ],
+        "path": [
+          1
+        ],
+        "choiceIDList": [
+          2,
+          4
+        ],
+        "filteredLimits": {
+          "lowerLimit": "",
+          "lowerLimitIncluded": true,
+          "upperLimit": "",
+          "upperLimitIncluded": true
+        },
+        "targetChoiceList": [
+          {
+            "isVirtual": false,
+            "isFiltered": false,
+            "name": "No",
+            "choiceIDList": [
+              0
+            ]
+          },
+          {
+            "isVirtual": false,
+            "isFiltered": false,
+            "name": "Yes",
+            "choiceIDList": [
+              1
+            ]
+          }
+        ],
+        "questionNo": 1,
+        "type": 4,
+        "includeMissing": false,
+        "VIScore": 8,
+        "liftDecimal": "12",
+        "questionPart": "1. How did you get informed about our company",
+        "questionPartWithoutNo": "How did you get informed about our company",
+        "choicePart": "Website or Social Media",
+        "comparisonExplanationPart": ""
+      },
+      {
+        "label": "Overall",
+        "children": [],
+        "expanded": true,
+        "branchSamplePercentage": 100,
+        "branchSampleSize": 4000,
+        "lift": 1,
+        "prediction": [
+          0.511,
+          0.489
+        ],
+        "path": [],
+        "choiceIDList": [],
+        "filteredLimits": {
+          "lowerLimit": "",
+          "lowerLimitIncluded": true,
+          "upperLimit": "",
+          "upperLimitIncluded": true
+        },
+        "targetChoiceList": [],
+        "questionNo": 2,
+        "type": 4,
+        "includeMissing": false,
+        "VIScore": 16,
+        "effectsTree": {
+          "data": [
+            {
+              "type": 4,
+              "response": "1. How did you get informed about our company",
+              "responseWithoutQuestionNo": "How did you get informed about our company",
+              "distribution": 57.14285714285714,
+              "questionNo": 1,
+              "filtered": false,
+              "choices": [
+                {
+                  "chosen": true,
+                  "ID": 0,
+                  "choiceDescription": "TV",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 1,
+                  "choiceDescription": "Newspaper",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 2,
+                  "choiceDescription": "Website",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 3,
+                  "choiceDescription": "Radio",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 4,
+                  "choiceDescription": "Social Media",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 5,
+                  "choiceDescription": "Advice",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 6,
+                  "choiceDescription": "Journal",
+                  "isFiltered": false
+                }
+              ],
+              "choice": {
+                "ID": null,
+                "choiceDescription": "Please select...",
+                "chosen": true,
+                "isFiltered": false,
+                "value": 0
+              },
+              "limitNumberOfChoices": 10,
+              "switchLabel": "ALL"
+            },
+            {
+              "missingDataLabel": "",
+              "type": 1,
+              "questionNo": 5,
+              "response": "5. Ho_w o_ld ar_e you",
+              "distribution": 28.57142857142857,
+              "responseWithoutQuestionNo": "Ho_w o_ld ar_e you",
+              "fixedLimits": {
+                "lowerLimit": 18,
+                "upperLimit": 68
+              },
+              "filteredLimits": {
+                "lowerLimit": 18,
+                "upperLimit": 68
+              },
+              "value": null,
+              "includeMissing": null,
+              "options": {
+                "floor": 18,
+                "ceil": 68,
+                "step": 1,
+                "precision": 0,
+                "enforceStep": false,
+                "noSwitching": true
+              }
+            },
+            {
+              "missingDataLabel": "",
+              "type": 1,
+              "questionNo": 9,
+              "response": "9. How much is your salary",
+              "distribution": 14.285714285714285,
+              "responseWithoutQuestionNo": "How much is your salary",
+              "fixedLimits": {
+                "lowerLimit": 1447,
+                "upperLimit": 55000
+              },
+              "filteredLimits": {
+                "lowerLimit": 1447,
+                "upperLimit": 55000
+              },
+              "value": null,
+              "includeMissing": null,
+              "options": {
+                "floor": 1447,
+                "ceil": 55000,
+                "step": 1,
+                "precision": 0,
+                "enforceStep": false,
+                "noSwitching": true
+              }
+            }
+          ],
+          "dataForPoint": [
+            {
+              "type": 4,
+              "response": "1. How did you get informed about our company",
+              "responseWithoutQuestionNo": "How did you get informed about our company",
+              "distribution": 57.14285714285714,
+              "questionNo": 1,
+              "filtered": false,
+              "choices": [
+                {
+                  "chosen": true,
+                  "ID": 0,
+                  "choiceDescription": "TV",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 1,
+                  "choiceDescription": "Newspaper",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 2,
+                  "choiceDescription": "Website",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 3,
+                  "choiceDescription": "Radio",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 4,
+                  "choiceDescription": "Social Media",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 5,
+                  "choiceDescription": "Advice",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 6,
+                  "choiceDescription": "Journal",
+                  "isFiltered": false
+                }
+              ],
+              "choice": {
+                "ID": null,
+                "choiceDescription": "Please select...",
+                "chosen": true,
+                "isFiltered": false,
+                "value": 0
+              },
+              "limitNumberOfChoices": 10,
+              "switchLabel": "ALL"
+            },
+            {
+              "missingDataLabel": "",
+              "type": 1,
+              "questionNo": 5,
+              "response": "5. Ho_w o_ld ar_e you",
+              "distribution": 28.57142857142857,
+              "responseWithoutQuestionNo": "Ho_w o_ld ar_e you",
+              "fixedLimits": {
+                "lowerLimit": 18,
+                "upperLimit": 68
+              },
+              "filteredLimits": {
+                "lowerLimit": 18,
+                "upperLimit": 68
+              },
+              "value": null,
+              "includeMissing": null,
+              "options": {
+                "floor": 18,
+                "ceil": 68,
+                "step": 1,
+                "precision": 0,
+                "enforceStep": false,
+                "noSwitching": true
+              }
+            },
+            {
+              "missingDataLabel": "",
+              "type": 1,
+              "questionNo": 9,
+              "response": "9. How much is your salary",
+              "distribution": 14.285714285714285,
+              "responseWithoutQuestionNo": "How much is your salary",
+              "fixedLimits": {
+                "lowerLimit": 1447,
+                "upperLimit": 55000
+              },
+              "filteredLimits": {
+                "lowerLimit": 1447,
+                "upperLimit": 55000
+              },
+              "value": null,
+              "includeMissing": null,
+              "options": {
+                "floor": 1447,
+                "ceil": 55000,
+                "step": 1,
+                "precision": 0,
+                "enforceStep": false,
+                "noSwitching": true
+              }
+            }
+          ],
+          "activeIndex": -1
+        },
+        "selected": true,
+        "liftDecimal": "00"
+      }
+    ],
+    "lift": 1.1785276073619633,
+    "isOpen": false,
+    "text": "1. How did you get informed about our company: Website, Social Media\n\r5. Ho_w o_ld ar_e you: <= 36.00\n\r"
+  },
+  {
+    "tree": [
+      {
+        "label": "9. How much is your salary: > 6,417.00",
+        "children": [],
+        "expanded": true,
+        "branchSamplePercentage": 3.1,
+        "branchSampleSize": 124,
+        "lift": 1.138036809815951,
+        "prediction": [
+          0.4435,
+          0.5565
+        ],
+        "path": [
+          1,
+          1,
+          1
+        ],
+        "choiceIDList": [],
+        "filteredLimits": {
+          "lowerLimit": 6417,
+          "lowerLimitIncluded": false,
+          "upperLimit": 55000,
+          "upperLimitIncluded": true
+        },
+        "targetChoiceList": [
+          {
+            "isVirtual": false,
+            "isFiltered": false,
+            "name": "No",
+            "choiceIDList": [
+              0
+            ]
+          },
+          {
+            "isVirtual": false,
+            "isFiltered": false,
+            "name": "Yes",
+            "choiceIDList": [
+              1
+            ]
+          }
+        ],
+        "questionNo": 9,
+        "type": 1,
+        "includeMissing": true,
+        "fixedLimits": {
+          "lowerLimit": 1447,
+          "lowerLimitIncluded": true,
+          "upperLimit": 55000,
+          "upperLimitIncluded": true
+        },
+        "VIScore": 2,
+        "liftDecimal": "14",
+        "questionPart": "9. How much is your salary",
+        "questionPartWithoutNo": "How much is your salary",
+        "choicePart": "6,417.00",
+        "comparisonPart": ">",
+        "comparisonExplanationPart": "> ",
+        "classes": [
+          "bold-weight-tree-label",
+          "enhence-tree-three"
+        ]
+      },
+      {
+        "label": "5. Ho_w o_ld ar_e you: > 36.00",
+        "children": [],
+        "expanded": true,
+        "branchSamplePercentage": 6.45,
+        "branchSampleSize": 258,
+        "lift": 0.816359918200409,
+        "prediction": [
+          0.6008,
+          0.3992
+        ],
+        "path": [
+          1,
+          1
+        ],
+        "choiceIDList": [],
+        "filteredLimits": {
+          "lowerLimit": 36,
+          "lowerLimitIncluded": false,
+          "upperLimit": 68,
+          "upperLimitIncluded": true
+        },
+        "targetChoiceList": [
+          {
+            "isVirtual": false,
+            "isFiltered": false,
+            "name": "No",
+            "choiceIDList": [
+              0
+            ]
+          },
+          {
+            "isVirtual": false,
+            "isFiltered": false,
+            "name": "Yes",
+            "choiceIDList": [
+              1
+            ]
+          }
+        ],
+        "questionNo": 5,
+        "type": 1,
+        "includeMissing": false,
+        "fixedLimits": {
+          "lowerLimit": 18,
+          "lowerLimitIncluded": true,
+          "upperLimit": 68,
+          "upperLimitIncluded": true
+        },
+        "VIScore": 4,
+        "liftDecimal": "82",
+        "questionPart": "5. Ho_w o_ld ar_e you",
+        "questionPartWithoutNo": "Ho_w o_ld ar_e you",
+        "choicePart": "36.00",
+        "comparisonPart": ">",
+        "comparisonExplanationPart": "> "
+      },
+      {
+        "label": "1. How did you get informed about our company: Website, Social Media",
+        "children": [],
+        "expanded": true,
+        "branchSamplePercentage": 37.9,
+        "branchSampleSize": 1516,
+        "lift": 1.1169734151329245,
+        "prediction": [
+          0.4538,
+          0.5462
+        ],
+        "path": [
+          1
+        ],
+        "choiceIDList": [
+          2,
+          4
+        ],
+        "filteredLimits": {
+          "lowerLimit": "",
+          "lowerLimitIncluded": true,
+          "upperLimit": "",
+          "upperLimitIncluded": true
+        },
+        "targetChoiceList": [
+          {
+            "isVirtual": false,
+            "isFiltered": false,
+            "name": "No",
+            "choiceIDList": [
+              0
+            ]
+          },
+          {
+            "isVirtual": false,
+            "isFiltered": false,
+            "name": "Yes",
+            "choiceIDList": [
+              1
+            ]
+          }
+        ],
+        "questionNo": 1,
+        "type": 4,
+        "includeMissing": false,
+        "VIScore": 8,
+        "liftDecimal": "12",
+        "questionPart": "1. How did you get informed about our company",
+        "questionPartWithoutNo": "How did you get informed about our company",
+        "choicePart": "Website or Social Media",
+        "comparisonExplanationPart": ""
+      },
+      {
+        "label": "Overall",
+        "children": [],
+        "expanded": true,
+        "branchSamplePercentage": 100,
+        "branchSampleSize": 4000,
+        "lift": 1,
+        "prediction": [
+          0.511,
+          0.489
+        ],
+        "path": [],
+        "choiceIDList": [],
+        "filteredLimits": {
+          "lowerLimit": "",
+          "lowerLimitIncluded": true,
+          "upperLimit": "",
+          "upperLimitIncluded": true
+        },
+        "targetChoiceList": [],
+        "questionNo": 2,
+        "type": 4,
+        "includeMissing": false,
+        "VIScore": 16,
+        "effectsTree": {
+          "data": [
+            {
+              "type": 4,
+              "response": "1. How did you get informed about our company",
+              "responseWithoutQuestionNo": "How did you get informed about our company",
+              "distribution": 57.14285714285714,
+              "questionNo": 1,
+              "filtered": false,
+              "choices": [
+                {
+                  "chosen": true,
+                  "ID": 0,
+                  "choiceDescription": "TV",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 1,
+                  "choiceDescription": "Newspaper",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 2,
+                  "choiceDescription": "Website",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 3,
+                  "choiceDescription": "Radio",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 4,
+                  "choiceDescription": "Social Media",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 5,
+                  "choiceDescription": "Advice",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 6,
+                  "choiceDescription": "Journal",
+                  "isFiltered": false
+                }
+              ],
+              "choice": {
+                "ID": null,
+                "choiceDescription": "Please select...",
+                "chosen": true,
+                "isFiltered": false,
+                "value": 0
+              },
+              "limitNumberOfChoices": 10,
+              "switchLabel": "ALL"
+            },
+            {
+              "missingDataLabel": "",
+              "type": 1,
+              "questionNo": 5,
+              "response": "5. Ho_w o_ld ar_e you",
+              "distribution": 28.57142857142857,
+              "responseWithoutQuestionNo": "Ho_w o_ld ar_e you",
+              "fixedLimits": {
+                "lowerLimit": 18,
+                "upperLimit": 68
+              },
+              "filteredLimits": {
+                "lowerLimit": 18,
+                "upperLimit": 68
+              },
+              "value": null,
+              "includeMissing": null,
+              "options": {
+                "floor": 18,
+                "ceil": 68,
+                "step": 1,
+                "precision": 0,
+                "enforceStep": false,
+                "noSwitching": true
+              }
+            },
+            {
+              "missingDataLabel": "",
+              "type": 1,
+              "questionNo": 9,
+              "response": "9. How much is your salary",
+              "distribution": 14.285714285714285,
+              "responseWithoutQuestionNo": "How much is your salary",
+              "fixedLimits": {
+                "lowerLimit": 1447,
+                "upperLimit": 55000
+              },
+              "filteredLimits": {
+                "lowerLimit": 1447,
+                "upperLimit": 55000
+              },
+              "value": null,
+              "includeMissing": null,
+              "options": {
+                "floor": 1447,
+                "ceil": 55000,
+                "step": 1,
+                "precision": 0,
+                "enforceStep": false,
+                "noSwitching": true
+              }
+            }
+          ],
+          "dataForPoint": [
+            {
+              "type": 4,
+              "response": "1. How did you get informed about our company",
+              "responseWithoutQuestionNo": "How did you get informed about our company",
+              "distribution": 57.14285714285714,
+              "questionNo": 1,
+              "filtered": false,
+              "choices": [
+                {
+                  "chosen": true,
+                  "ID": 0,
+                  "choiceDescription": "TV",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 1,
+                  "choiceDescription": "Newspaper",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 2,
+                  "choiceDescription": "Website",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 3,
+                  "choiceDescription": "Radio",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 4,
+                  "choiceDescription": "Social Media",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 5,
+                  "choiceDescription": "Advice",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 6,
+                  "choiceDescription": "Journal",
+                  "isFiltered": false
+                }
+              ],
+              "choice": {
+                "ID": null,
+                "choiceDescription": "Please select...",
+                "chosen": true,
+                "isFiltered": false,
+                "value": 0
+              },
+              "limitNumberOfChoices": 10,
+              "switchLabel": "ALL"
+            },
+            {
+              "missingDataLabel": "",
+              "type": 1,
+              "questionNo": 5,
+              "response": "5. Ho_w o_ld ar_e you",
+              "distribution": 28.57142857142857,
+              "responseWithoutQuestionNo": "Ho_w o_ld ar_e you",
+              "fixedLimits": {
+                "lowerLimit": 18,
+                "upperLimit": 68
+              },
+              "filteredLimits": {
+                "lowerLimit": 18,
+                "upperLimit": 68
+              },
+              "value": null,
+              "includeMissing": null,
+              "options": {
+                "floor": 18,
+                "ceil": 68,
+                "step": 1,
+                "precision": 0,
+                "enforceStep": false,
+                "noSwitching": true
+              }
+            },
+            {
+              "missingDataLabel": "",
+              "type": 1,
+              "questionNo": 9,
+              "response": "9. How much is your salary",
+              "distribution": 14.285714285714285,
+              "responseWithoutQuestionNo": "How much is your salary",
+              "fixedLimits": {
+                "lowerLimit": 1447,
+                "upperLimit": 55000
+              },
+              "filteredLimits": {
+                "lowerLimit": 1447,
+                "upperLimit": 55000
+              },
+              "value": null,
+              "includeMissing": null,
+              "options": {
+                "floor": 1447,
+                "ceil": 55000,
+                "step": 1,
+                "precision": 0,
+                "enforceStep": false,
+                "noSwitching": true
+              }
+            }
+          ],
+          "activeIndex": -1
+        },
+        "selected": true,
+        "liftDecimal": "00"
+      }
+    ],
+    "lift": 1.138036809815951,
+    "isOpen": false,
+    "text": "1. How did you get informed about our company: Website, Social Media\n\r5. Ho_w o_ld ar_e you: > 36.00\n\r9. How much is your salary: > 6,417.00\n\r"
+  },
+  {
+    "tree": [
+      {
+        "label": "1. How did you get informed about our company: TV, Newspaper, Radio, Advice, Journal",
+        "children": [],
+        "expanded": true,
+        "branchSamplePercentage": 62.1,
+        "branchSampleSize": 2484,
+        "lift": 0.9286298568507158,
+        "prediction": [
+          0.5459,
+          0.4541
+        ],
+        "path": [
+          0
+        ],
+        "choiceIDList": [
+          0,
+          1,
+          3,
+          5,
+          6
+        ],
+        "filteredLimits": {
+          "lowerLimit": "",
+          "lowerLimitIncluded": true,
+          "upperLimit": "",
+          "upperLimitIncluded": true
+        },
+        "targetChoiceList": [
+          {
+            "isVirtual": false,
+            "isFiltered": false,
+            "name": "No",
+            "choiceIDList": [
+              0
+            ]
+          },
+          {
+            "isVirtual": false,
+            "isFiltered": false,
+            "name": "Yes",
+            "choiceIDList": [
+              1
+            ]
+          }
+        ],
+        "questionNo": 1,
+        "type": 4,
+        "includeMissing": false,
+        "VIScore": 8,
+        "liftDecimal": "93",
+        "questionPart": "1. How did you get informed about our company",
+        "questionPartWithoutNo": "How did you get informed about our company",
+        "choicePart": "TV, Newspaper, Radio, Advice or Journal",
+        "comparisonExplanationPart": "",
+        "classes": [
+          "bold-weight-tree-label",
+          "enhence-tree-one"
+        ]
+      },
+      {
+        "label": "Overall",
+        "children": [],
+        "expanded": true,
+        "branchSamplePercentage": 100,
+        "branchSampleSize": 4000,
+        "lift": 1,
+        "prediction": [
+          0.511,
+          0.489
+        ],
+        "path": [],
+        "choiceIDList": [],
+        "filteredLimits": {
+          "lowerLimit": "",
+          "lowerLimitIncluded": true,
+          "upperLimit": "",
+          "upperLimitIncluded": true
+        },
+        "targetChoiceList": [],
+        "questionNo": 2,
+        "type": 4,
+        "includeMissing": false,
+        "VIScore": 16,
+        "effectsTree": {
+          "data": [
+            {
+              "type": 4,
+              "response": "1. How did you get informed about our company",
+              "responseWithoutQuestionNo": "How did you get informed about our company",
+              "distribution": 57.14285714285714,
+              "questionNo": 1,
+              "filtered": false,
+              "choices": [
+                {
+                  "chosen": true,
+                  "ID": 0,
+                  "choiceDescription": "TV",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 1,
+                  "choiceDescription": "Newspaper",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 2,
+                  "choiceDescription": "Website",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 3,
+                  "choiceDescription": "Radio",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 4,
+                  "choiceDescription": "Social Media",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 5,
+                  "choiceDescription": "Advice",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 6,
+                  "choiceDescription": "Journal",
+                  "isFiltered": false
+                }
+              ],
+              "choice": {
+                "ID": null,
+                "choiceDescription": "Please select...",
+                "chosen": true,
+                "isFiltered": false,
+                "value": 0
+              },
+              "limitNumberOfChoices": 10,
+              "switchLabel": "ALL"
+            },
+            {
+              "missingDataLabel": "",
+              "type": 1,
+              "questionNo": 5,
+              "response": "5. Ho_w o_ld ar_e you",
+              "distribution": 28.57142857142857,
+              "responseWithoutQuestionNo": "Ho_w o_ld ar_e you",
+              "fixedLimits": {
+                "lowerLimit": 18,
+                "upperLimit": 68
+              },
+              "filteredLimits": {
+                "lowerLimit": 18,
+                "upperLimit": 68
+              },
+              "value": null,
+              "includeMissing": null,
+              "options": {
+                "floor": 18,
+                "ceil": 68,
+                "step": 1,
+                "precision": 0,
+                "enforceStep": false,
+                "noSwitching": true
+              }
+            },
+            {
+              "missingDataLabel": "",
+              "type": 1,
+              "questionNo": 9,
+              "response": "9. How much is your salary",
+              "distribution": 14.285714285714285,
+              "responseWithoutQuestionNo": "How much is your salary",
+              "fixedLimits": {
+                "lowerLimit": 1447,
+                "upperLimit": 55000
+              },
+              "filteredLimits": {
+                "lowerLimit": 1447,
+                "upperLimit": 55000
+              },
+              "value": null,
+              "includeMissing": null,
+              "options": {
+                "floor": 1447,
+                "ceil": 55000,
+                "step": 1,
+                "precision": 0,
+                "enforceStep": false,
+                "noSwitching": true
+              }
+            }
+          ],
+          "dataForPoint": [
+            {
+              "type": 4,
+              "response": "1. How did you get informed about our company",
+              "responseWithoutQuestionNo": "How did you get informed about our company",
+              "distribution": 57.14285714285714,
+              "questionNo": 1,
+              "filtered": false,
+              "choices": [
+                {
+                  "chosen": true,
+                  "ID": 0,
+                  "choiceDescription": "TV",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 1,
+                  "choiceDescription": "Newspaper",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 2,
+                  "choiceDescription": "Website",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 3,
+                  "choiceDescription": "Radio",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 4,
+                  "choiceDescription": "Social Media",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 5,
+                  "choiceDescription": "Advice",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 6,
+                  "choiceDescription": "Journal",
+                  "isFiltered": false
+                }
+              ],
+              "choice": {
+                "ID": null,
+                "choiceDescription": "Please select...",
+                "chosen": true,
+                "isFiltered": false,
+                "value": 0
+              },
+              "limitNumberOfChoices": 10,
+              "switchLabel": "ALL"
+            },
+            {
+              "missingDataLabel": "",
+              "type": 1,
+              "questionNo": 5,
+              "response": "5. Ho_w o_ld ar_e you",
+              "distribution": 28.57142857142857,
+              "responseWithoutQuestionNo": "Ho_w o_ld ar_e you",
+              "fixedLimits": {
+                "lowerLimit": 18,
+                "upperLimit": 68
+              },
+              "filteredLimits": {
+                "lowerLimit": 18,
+                "upperLimit": 68
+              },
+              "value": null,
+              "includeMissing": null,
+              "options": {
+                "floor": 18,
+                "ceil": 68,
+                "step": 1,
+                "precision": 0,
+                "enforceStep": false,
+                "noSwitching": true
+              }
+            },
+            {
+              "missingDataLabel": "",
+              "type": 1,
+              "questionNo": 9,
+              "response": "9. How much is your salary",
+              "distribution": 14.285714285714285,
+              "responseWithoutQuestionNo": "How much is your salary",
+              "fixedLimits": {
+                "lowerLimit": 1447,
+                "upperLimit": 55000
+              },
+              "filteredLimits": {
+                "lowerLimit": 1447,
+                "upperLimit": 55000
+              },
+              "value": null,
+              "includeMissing": null,
+              "options": {
+                "floor": 1447,
+                "ceil": 55000,
+                "step": 1,
+                "precision": 0,
+                "enforceStep": false,
+                "noSwitching": true
+              }
+            }
+          ],
+          "activeIndex": -1
+        },
+        "selected": true,
+        "liftDecimal": "00"
+      }
+    ],
+    "lift": 0.9286298568507158,
+    "isOpen": true,
+    "text": "1. How did you get informed about our company: TV, Newspaper, Radio, Advice, Journal\n\r"
+  },
+  {
+    "tree": [
+      {
+        "label": "9. How much is your salary: <= 6,417.00",
+        "children": [],
+        "expanded": true,
+        "branchSamplePercentage": 3.35,
+        "branchSampleSize": 134,
+        "lift": 0.5188139059304703,
+        "prediction": [
+          0.7463,
+          0.2537
+        ],
+        "path": [
+          1,
+          1,
+          0
+        ],
+        "choiceIDList": [],
+        "filteredLimits": {
+          "lowerLimit": 1447,
+          "lowerLimitIncluded": true,
+          "upperLimit": 6417,
+          "upperLimitIncluded": true
+        },
+        "targetChoiceList": [
+          {
+            "isVirtual": false,
+            "isFiltered": false,
+            "name": "No",
+            "choiceIDList": [
+              0
+            ]
+          },
+          {
+            "isVirtual": false,
+            "isFiltered": false,
+            "name": "Yes",
+            "choiceIDList": [
+              1
+            ]
+          }
+        ],
+        "questionNo": 9,
+        "type": 1,
+        "includeMissing": true,
+        "fixedLimits": {
+          "lowerLimit": 1447,
+          "lowerLimitIncluded": true,
+          "upperLimit": 55000,
+          "upperLimitIncluded": true
+        },
+        "VIScore": 2,
+        "liftDecimal": "52",
+        "questionPart": "9. How much is your salary",
+        "questionPartWithoutNo": "How much is your salary",
+        "choicePart": "6,417.00",
+        "comparisonPart": "<=",
+        "comparisonExplanationPart": "≤ "
+      },
+      {
+        "label": "5. Ho_w o_ld ar_e you: > 36.00",
+        "children": [],
+        "expanded": true,
+        "branchSamplePercentage": 6.45,
+        "branchSampleSize": 258,
+        "lift": 0.816359918200409,
+        "prediction": [
+          0.6008,
+          0.3992
+        ],
+        "path": [
+          1,
+          1
+        ],
+        "choiceIDList": [],
+        "filteredLimits": {
+          "lowerLimit": 36,
+          "lowerLimitIncluded": false,
+          "upperLimit": 68,
+          "upperLimitIncluded": true
+        },
+        "targetChoiceList": [
+          {
+            "isVirtual": false,
+            "isFiltered": false,
+            "name": "No",
+            "choiceIDList": [
+              0
+            ]
+          },
+          {
+            "isVirtual": false,
+            "isFiltered": false,
+            "name": "Yes",
+            "choiceIDList": [
+              1
+            ]
+          }
+        ],
+        "questionNo": 5,
+        "type": 1,
+        "includeMissing": false,
+        "fixedLimits": {
+          "lowerLimit": 18,
+          "lowerLimitIncluded": true,
+          "upperLimit": 68,
+          "upperLimitIncluded": true
+        },
+        "VIScore": 4,
+        "liftDecimal": "82",
+        "questionPart": "5. Ho_w o_ld ar_e you",
+        "questionPartWithoutNo": "Ho_w o_ld ar_e you",
+        "choicePart": "36.00",
+        "comparisonPart": ">",
+        "comparisonExplanationPart": "> "
+      },
+      {
+        "label": "1. How did you get informed about our company: Website, Social Media",
+        "children": [],
+        "expanded": true,
+        "branchSamplePercentage": 37.9,
+        "branchSampleSize": 1516,
+        "lift": 1.1169734151329245,
+        "prediction": [
+          0.4538,
+          0.5462
+        ],
+        "path": [
+          1
+        ],
+        "choiceIDList": [
+          2,
+          4
+        ],
+        "filteredLimits": {
+          "lowerLimit": "",
+          "lowerLimitIncluded": true,
+          "upperLimit": "",
+          "upperLimitIncluded": true
+        },
+        "targetChoiceList": [
+          {
+            "isVirtual": false,
+            "isFiltered": false,
+            "name": "No",
+            "choiceIDList": [
+              0
+            ]
+          },
+          {
+            "isVirtual": false,
+            "isFiltered": false,
+            "name": "Yes",
+            "choiceIDList": [
+              1
+            ]
+          }
+        ],
+        "questionNo": 1,
+        "type": 4,
+        "includeMissing": false,
+        "VIScore": 8,
+        "liftDecimal": "12",
+        "questionPart": "1. How did you get informed about our company",
+        "questionPartWithoutNo": "How did you get informed about our company",
+        "choicePart": "Website or Social Media",
+        "comparisonExplanationPart": ""
+      },
+      {
+        "label": "Overall",
+        "children": [],
+        "expanded": true,
+        "branchSamplePercentage": 100,
+        "branchSampleSize": 4000,
+        "lift": 1,
+        "prediction": [
+          0.511,
+          0.489
+        ],
+        "path": [],
+        "choiceIDList": [],
+        "filteredLimits": {
+          "lowerLimit": "",
+          "lowerLimitIncluded": true,
+          "upperLimit": "",
+          "upperLimitIncluded": true
+        },
+        "targetChoiceList": [],
+        "questionNo": 2,
+        "type": 4,
+        "includeMissing": false,
+        "VIScore": 16,
+        "effectsTree": {
+          "data": [
+            {
+              "type": 4,
+              "response": "1. How did you get informed about our company",
+              "responseWithoutQuestionNo": "How did you get informed about our company",
+              "distribution": 57.14285714285714,
+              "questionNo": 1,
+              "filtered": false,
+              "choices": [
+                {
+                  "chosen": true,
+                  "ID": 0,
+                  "choiceDescription": "TV",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 1,
+                  "choiceDescription": "Newspaper",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 2,
+                  "choiceDescription": "Website",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 3,
+                  "choiceDescription": "Radio",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 4,
+                  "choiceDescription": "Social Media",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 5,
+                  "choiceDescription": "Advice",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 6,
+                  "choiceDescription": "Journal",
+                  "isFiltered": false
+                }
+              ],
+              "choice": {
+                "ID": null,
+                "choiceDescription": "Please select...",
+                "chosen": true,
+                "isFiltered": false,
+                "value": 0
+              },
+              "limitNumberOfChoices": 10,
+              "switchLabel": "ALL"
+            },
+            {
+              "missingDataLabel": "",
+              "type": 1,
+              "questionNo": 5,
+              "response": "5. Ho_w o_ld ar_e you",
+              "distribution": 28.57142857142857,
+              "responseWithoutQuestionNo": "Ho_w o_ld ar_e you",
+              "fixedLimits": {
+                "lowerLimit": 18,
+                "upperLimit": 68
+              },
+              "filteredLimits": {
+                "lowerLimit": 18,
+                "upperLimit": 68
+              },
+              "value": null,
+              "includeMissing": null,
+              "options": {
+                "floor": 18,
+                "ceil": 68,
+                "step": 1,
+                "precision": 0,
+                "enforceStep": false,
+                "noSwitching": true
+              }
+            },
+            {
+              "missingDataLabel": "",
+              "type": 1,
+              "questionNo": 9,
+              "response": "9. How much is your salary",
+              "distribution": 14.285714285714285,
+              "responseWithoutQuestionNo": "How much is your salary",
+              "fixedLimits": {
+                "lowerLimit": 1447,
+                "upperLimit": 55000
+              },
+              "filteredLimits": {
+                "lowerLimit": 1447,
+                "upperLimit": 55000
+              },
+              "value": null,
+              "includeMissing": null,
+              "options": {
+                "floor": 1447,
+                "ceil": 55000,
+                "step": 1,
+                "precision": 0,
+                "enforceStep": false,
+                "noSwitching": true
+              }
+            }
+          ],
+          "dataForPoint": [
+            {
+              "type": 4,
+              "response": "1. How did you get informed about our company",
+              "responseWithoutQuestionNo": "How did you get informed about our company",
+              "distribution": 57.14285714285714,
+              "questionNo": 1,
+              "filtered": false,
+              "choices": [
+                {
+                  "chosen": true,
+                  "ID": 0,
+                  "choiceDescription": "TV",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 1,
+                  "choiceDescription": "Newspaper",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 2,
+                  "choiceDescription": "Website",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 3,
+                  "choiceDescription": "Radio",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 4,
+                  "choiceDescription": "Social Media",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 5,
+                  "choiceDescription": "Advice",
+                  "isFiltered": false
+                },
+                {
+                  "chosen": true,
+                  "ID": 6,
+                  "choiceDescription": "Journal",
+                  "isFiltered": false
+                }
+              ],
+              "choice": {
+                "ID": null,
+                "choiceDescription": "Please select...",
+                "chosen": true,
+                "isFiltered": false,
+                "value": 0
+              },
+              "limitNumberOfChoices": 10,
+              "switchLabel": "ALL"
+            },
+            {
+              "missingDataLabel": "",
+              "type": 1,
+              "questionNo": 5,
+              "response": "5. Ho_w o_ld ar_e you",
+              "distribution": 28.57142857142857,
+              "responseWithoutQuestionNo": "Ho_w o_ld ar_e you",
+              "fixedLimits": {
+                "lowerLimit": 18,
+                "upperLimit": 68
+              },
+              "filteredLimits": {
+                "lowerLimit": 18,
+                "upperLimit": 68
+              },
+              "value": null,
+              "includeMissing": null,
+              "options": {
+                "floor": 18,
+                "ceil": 68,
+                "step": 1,
+                "precision": 0,
+                "enforceStep": false,
+                "noSwitching": true
+              }
+            },
+            {
+              "missingDataLabel": "",
+              "type": 1,
+              "questionNo": 9,
+              "response": "9. How much is your salary",
+              "distribution": 14.285714285714285,
+              "responseWithoutQuestionNo": "How much is your salary",
+              "fixedLimits": {
+                "lowerLimit": 1447,
+                "upperLimit": 55000
+              },
+              "filteredLimits": {
+                "lowerLimit": 1447,
+                "upperLimit": 55000
+              },
+              "value": null,
+              "includeMissing": null,
+              "options": {
+                "floor": 1447,
+                "ceil": 55000,
+                "step": 1,
+                "precision": 0,
+                "enforceStep": false,
+                "noSwitching": true
+              }
+            }
+          ],
+          "activeIndex": -1
+        },
+        "selected": true,
+        "liftDecimal": "00"
+      }
+    ],
+    "lift": 0.5188139059304703,
+    "isOpen": false,
+    "text": "1. How did you get informed about our company: Website, Social Media\n\r5. Ho_w o_ld ar_e you: > 36.00\n\r9. How much is your salary: <= 6,417.00\n\r"
+  }
+]

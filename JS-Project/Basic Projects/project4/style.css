@@ -1,0 +1,50 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(4k-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+
+}
+
+h2{
+    font-size: 3.5rem;
+    font-family: fantasy;
+    color:rgb(17, 75, 202);
+    text-transform: capitalize;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.counter-box{
+    text-align: center;
+    width: 30rem;
+    padding: 2rem;
+    border: 2px rgb(17, 75, 202) solid;
+    border-radius: 7%;
+
+}
+
+button[type='button']{
+    width: 10rem;
+    height: 2.5rem;
+    font-family: fantasy;
+    font-size: 20px;
+    border-radius: 15%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 2s;
+}
+button[type='button']:hover{
+
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 1);
+}
+
+.counter{
+    font-size: 90px;
+   
+}
+
+
+

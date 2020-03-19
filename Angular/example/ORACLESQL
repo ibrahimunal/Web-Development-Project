@@ -1,0 +1,134 @@
+getOracleSQL: function (segmentsTree, targetType, targetChoiceIndex) {
+                console.log(segmentsTree);
+                console.log(targetType);
+                console.log(targetChoiceIndex);
+                var OracleSQL = "SELECT t.*, ( CASE ";
+                //Bütün segmentler
+                segmentsTree.forEach(function (segment, segmentIndex) {
+                    OracleSQL = OracleSQL.concat("\r\tWHEN");
+                    //Segmentlerin sadeleştirilmiş treeleri
+                    segment.tree.forEach(function (branch, branchIndex) {
+                        if (branchIndex === 0) {
+                            OracleSQL = OracleSQL.concat("(");
+                        }
+                        //Overall hariç
+                        if (segment.tree.length - 1 > branchIndex) {
+                            //Tek choice varsa tek if birden fazla varsa or ve virgüle göre parse işlemi gerekmekte.
+                            if ((branch.type === 4 || branch.type === 6) && branch.choiceIDList.length > 1) {
+                                OracleSQL = OracleSQL.concat("(")
+                                var lastChoice = branch.choicePart.substring(branch.choicePart.lastIndexOf("or") + 3, branch.choicePart.length);
+                                var choiceList = branch.choicePart.split(",");
+                                choiceList = restructChoiceList(choiceList);
+                                choiceList.push(lastChoice);
+                                //Branch'in her bir choice'u
+                                choiceList.forEach(function (choice, choiceIndex) {
+                                    if (choiceIndex !== choiceList.length - 1) {
+                                        if (choice === "Missing") {
+                                            OracleSQL = OracleSQL.concat(branch.questionPartWithoutNo + " = " + "NULL" + " OR ");
+                                        }
+                                        else if (choice.includes("'") === true) {
+                                            var changeQuoteChoice = choice.replace("'", "''");
+                                            OracleSQL = OracleSQL.concat(branch.questionPartWithoutNo + " = " + "'" + changeQuoteChoice + "' OR ");
+                                        }
+                                        else {
+                                            OracleSQL = OracleSQL.concat(branch.questionPartWithoutNo + " = " + "'" + choice + "' OR ");
+                                        }
+                                    }
+                                    else {
+                                        if (choice === "Missing") {
+                                            OracleSQL = OracleSQL.concat(branch.questionPartWithoutNo + " = " + "NULL" + ") ");
+                                        }
+                                        else if (choice.includes("'") === true) {
+                                            var changeQuoteChoice = choice.replace("'", "''");
+                                            OracleSQL = OracleSQL.concat(branch.questionPartWithoutNo + " = " + "'" + changeQuoteChoice + "') ");
+                                        }
+                                        else {
+                                            OracleSQL = OracleSQL.concat(branch.questionPartWithoutNo + " = " + "'" + choice + "') ");
+                                        }
+                                    }
+                                });
+                            }
+                            else if (branch.type === 4 || branch.type === 6) {
+                                if (branch.choicePart === "Missing") {
+                                    OracleSQL = OracleSQL.concat(branch.questionPartWithoutNo + " = NULL");
+                                }
+                                else if (branch.choicePart.includes("'") === true) {
+                                    var changeQuoteChoice = branch.choicePart.replace("'", "''");
+                                    OracleSQL = OracleSQL.concat(branch.questionPartWithoutNo + " = '" + changeQuoteChoice + "'");
+                                }
+                                else {
+                                    OracleSQL = OracleSQL.concat(branch.questionPartWithoutNo + " = '" + branch.choicePart + "'");
+                                }
+                            }
+                            else {
+                                if (branch.includeMissing === false) {
+                                    var limit = getNumericLimit(branch);
+                                    OracleSQL = OracleSQL.concat(branch.questionPartWithoutNo + " " + branch.comparisonPart + " " + limit);
+                                }
+                                else if (branch.choicePart.includes("'") === true) {
+                                    if(branch.choicePart.includes("Missing") === true) {
+                                        // var choice = branch.choicePart.substring(0, branch.choicePart.lastIndexOf("or") - 1);
+                                        // var changeQuoteChoice = choice.replace("'", "''");
+                                        // OracleSQL = OracleSQL.concat("(\"" + branch.questionPartWithoutNo + "\" " + branch.comparisonPart + " " + changeQuoteChoice);
+                                        // OracleSQL = OracleSQL.concat(branch.questionPartWithoutNo + "\" " + branch.comparisonPart + " " + changeQuoteChoice);
+                                        var limit = getNumericLimit(branch);
+                                        OracleSQL = OracleSQL.concat("(" + branch.questionPartWithoutNo + " " + branch.comparisonPart + " " + limit);
+                                        OracleSQL = OracleSQL.concat(" OR " + branch.questionPartWithoutNo + " = NULL)");
+                                    }
+                                    else {
+                                        // var changeQuoteChoice = choice.replace("'", "''");
+                                        // OracleSQL = OracleSQL.concat("(\"" + branch.questionPartWithoutNo + "\" " + branch.comparisonPart + " " + branch.choicePart);
+                                        // OracleSQL = OracleSQL.concat(branch.questionPartWithoutNo + "\" " + branch.comparisonPart + " " + branch.choicePart);
+                                        var limit = getNumericLimit(branch);
+                                        OracleSQL = OracleSQL.concat(branch.questionPartWithoutNo + " " + branch.comparisonPart + " " + limit);
+                                        // OracleSQL = OracleSQL.concat(" OR \"" + branch.questionPartWithoutNo + "\" = NULL)");
+                                    }
+                                }
+                                else {
+                                    if(branch.choicePart.includes("Missing") === true) {
+                                        // var choice = branch.choicePart.substring(0, branch.choicePart.lastIndexOf("or") - 1);
+                                        // OracleSQL = OracleSQL.concat("(\"" + branch.questionPartWithoutNo + "\" " + branch.comparisonPart + " " + choice);
+                                        // OracleSQL = OracleSQL.concat(branch.questionPartWithoutNo + "\" " + branch.comparisonPart + " " + choice);
+                                        var limit = getNumericLimit(branch);
+                                        OracleSQL = OracleSQL.concat("(" + branch.questionPartWithoutNo + " " + branch.comparisonPart + " " + limit);
+                                        OracleSQL = OracleSQL.concat(" OR " + branch.questionPartWithoutNo + " = NULL)");
+                                    }
+                                    else {
+                                        // OracleSQL = OracleSQL.concat("(\"" + branch.questionPartWithoutNo + "\" " + branch.comparisonPart + " " + branch.choicePart);
+                                        // OracleSQL = OracleSQL.concat(branch.questionPartWithoutNo + "\" " + branch.comparisonPart + " " + branch.choicePart);
+                                        var limit = getNumericLimit(branch);
+                                        OracleSQL = OracleSQL.concat(branch.questionPartWithoutNo + " " + branch.comparisonPart + " " + limit);
+                                        // OracleSQL = OracleSQL.concat(" OR \"" + branch.questionPartWithoutNo + "\" = NULL)");
+                                    }
+                                }
+                            }
+                        }
+                        //On the last branch
+                        if (segment.tree.length - 2 === branchIndex) {
+                            OracleSQL = OracleSQL.concat(") ");
+                            if (targetType === 4) {
+                                if (segmentIndex === segmentsTree.length - 1) {
+                                    OracleSQL = OracleSQL.concat("THEN " + segment.tree[0].prediction[targetChoiceIndex].toString() + " ");
+                                    OracleSQL = OracleSQL.concat('\rEND) as Score from MYTABLE t;');
+                                }
+                                else {
+                                    OracleSQL = OracleSQL.concat("THEN " + segment.tree[0].prediction[targetChoiceIndex].toString() + " ");
+                                }
+                            }
+                            else {
+                                if (segmentIndex === segmentsTree.length - 1) {
+                                    OracleSQL = OracleSQL.concat("THEN " + segment.tree[0].prediction[0].toString() + " ");
+                                    OracleSQL = OracleSQL.concat('\rEND) as Score from MYTABLE t;');
+                                }
+                                else {
+                                    OracleSQL = OracleSQL.concat("THEN " + segment.tree[0].prediction[0].toString() + " ");
+                                }
+                            }
+                        }
+                        else if (segment.tree.length - 1 > branchIndex) {
+                            OracleSQL = OracleSQL.concat(" AND ");
+                        }
+                    });
+                });
+                return OracleSQL;
+            }

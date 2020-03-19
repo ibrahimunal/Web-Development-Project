@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" ng-app="turtleFacts">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Hello, world!</title>
+  </head>
+  <body ng-controller='listCtrl'> 
+    <div class="container">
+        <div class="page-header">
+
+         <h1>Turtle Facts Quiz</h1>   
+        <h3>
+            Learn about all the turtles
+            <strong>TURTLE QUIZ</strong>
+        </h3>
+        </div>
+        <div class="row">
+            <div class="col-sm-6" ng-repeat="turtle in turtlesData">
+                <div class="well well-sm">
+                    <div class="row background" >
+                        <div class="col-md-6">
+                            <img src="{{turtle.image_url}}" class="img-rounded img-reponsive" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h4>{{turtle.type}}</h4>
+                            <p> <strong>Locations:</strong>{{turtle.locations}}</p>
+                            <p> <strong>Size:</strong>{{turtle.size}}</p>
+                            <p> <strong>Average:</strong>{{turtle.lifespan}}</p>
+                            <p> <strong>Diet:</strong>{{turtle.diet}}</p>
+                            <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">More Info</button>
+
+                        </div>
+                    </div>
+
+                </div>
+             
+
+            </div>
+           
+        </div>
+
+
+
+
+    </div>
+   
+  </body>
+</html>
